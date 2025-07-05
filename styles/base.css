@@ -56,8 +56,18 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
 
-  .card > p {
-    width: 600px;
+  section p {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+  }
+
+  .card img {
+    z-index: 13;
+  }
+
+  .card > a {
+    display: block;
   }
 
   footer {
