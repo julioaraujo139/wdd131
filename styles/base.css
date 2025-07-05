@@ -62,10 +62,6 @@
     gap: 50px;
   }
 
-  .card img {
-    z-index: 13;
-  }
-
   .card > a {
     display: block;
   }
