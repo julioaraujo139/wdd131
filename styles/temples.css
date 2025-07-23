@@ -3,49 +3,71 @@
     --body-font: "Roboto Condensed", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     line-height: 1.6;
   }
 
-  header {
+header {
     display: flex;
-    padding: 0 16px;
-    background: #82118a;
+    padding: 1rem;
+    background: #310970;
     color: white;
     justify-content: space-between;
 
   }
 
-  nav {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  nav a {
-    color: white;
-    margin: 0.5rem;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-items: center;
   }
 
-  nav a:hover {
-    color: #222;
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    justify-items: center;
+  }
+
+nav a:hover {
+    background-color: #fff;
+    color: #310970;
   }
 
 main {
-    margin: 1rem auto;
-    max-width: 1080px;
-    padding: .5rem;
+  max-width: 800px;
+    margin: 0 auto;
 }
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+  }
 
 section {
     display:grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 25px 20px;
     place-items: center;
     }
 
@@ -55,12 +77,12 @@ figure {
     }
 
 img { 
-    width: 350px; 
+    max-width: 200px; 
     height: auto; 
     margin: .5rem;
     }
 
-  h1 {
+h1 {
     font-family: var(--heading-font);
   }
 
@@ -68,8 +90,71 @@ p, figcaption, nav {
     font-family: var(--body-font);
 }
 
- footer {
-    background: #82118a;
+#navLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: .5rem;
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+#hamburgerBtn {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #hamburgerBtn {
+        display: block;
+        color: #fff;
+        z-index: 3;
+    }
+
+    nav#hamburger {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #310970;
+        z-index: 1;
+        justify-items: center;
+    }
+
+    nav#hamburger.open {
+        display: block;      
+    }
+
+    #navLinks {
+        flex-direction: column;
+        align-items: center;
+        background-color: #310970;
+        padding: 1rem;
+    }
+
+    #navLinks li a {
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+    }  
+
+    main {
+      max-width: 500px;
+
+    }
+}
+
+footer {
+    background: #310970;
     color: white;
     text-align: center;
     padding: 1rem;
