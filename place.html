@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="WDD131 | W03 Country Page">
+    <meta name="author" content="Julio Araujo">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Curitiba</h1>
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/image-small.webp">
+            <source media="(min-width: 1024px)" srcset="images/image-large.webp">
+            <img src="images/image-large.webp" alt="">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <p>Area: 434.9 km²</p>
+            <p>Population: Approximately 2 million people</p>
+            <p>Capital: Curitiba is the capital of the state of Paraná, Brazil</p>
+            <p>Languages: Portuguese (official language)</p>
+            <p>Currency: Brazilian Real (BRL - R$)</p>
+            <p>Time Zone: UTC-3 (Brasília Time)</p>
+            <p>Calling Code: +55 41</p>
+            <p>Internet TLD: .br</p>
+        </section>
+        <section id="weather" class="weather">
+            <h2>Weather</h2>
+            <img src="images/sunshine_icon.svg" alt="Sunshine sunshine_icon">
+            <p>Temperature: 35°C</p>
+            <p>Condition: Partly Cloudy</p>
+            <p>Wind Speed: 10 mph</p>
+            <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#10070; Julio Araujo &#10070; Paraná, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@media (min-width: 768px) {
+    main {
+        position: relative;
+    }
+
+	picture img{
+        position: relative;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+    }
+
+    .data {
+        background-color: rgb(255, 255, 255, 0.7);
+        padding-top: 5rem;
+        width: 350px;
+        position:absolute;
+        left: 5%;
+        bottom: 40%;
+    }    
+
+    .data h2, .weather h2 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 0;
+        height: 50px;
+        text-align:start;
+        background-color: #310970;
+        position: absolute;
+        top:5%;
+        left: -5%;
+    }
+
+    .weather {
+        background-color: rgb(255, 255, 255, 0.7);
+        padding-top: 5rem;
+        width: 300px;
+        position: absolute;
+        left: 65%;
+        top: 20%;
+    }
+}

@@ -1,0 +1,55 @@
+:root {
+    --heading-font: "Raleway", sans-serif;
+    --body-font: "Roboto Condensed", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 36px;
+    padding: 1rem 0;
+    text-align: center;
+    color:#ffffff;
+    background-color: #ffb700; 
+    border-bottom-style: solid;
+    border-bottom-width: 1rem;
+    border-color: #310970;
+}
+
+.data, .weather {
+    width: auto;
+    text-align: center;
+    justify-items: center;
+    margin: 1rem;
+}
+
+.data h2, .weather h2 {
+    font-family: var(--heading-font);
+    font-size: 32px;
+    padding-bottom: 1rem;
+}
+
+.data p, .weather p {
+    font-family: var(--body-font);
+    font-size: 14px;
+    padding: .5rem;
+
+}
+
+.weather img {
+    width: 50px;
+}
+
+footer {
+    font-family: var(--body-font);
+    background: #ffb700;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
