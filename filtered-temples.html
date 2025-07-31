@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="WDD131 | W02 Temple Web Page">
+    <meta name="author" content="Julio Araujo">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1>Temple Album</h1>
+    <button id="hamburgerBtn" aria-label="Toggle navigation menu">&#9776;</button>
+    <nav id="hamburger">
+        <ul id="navLinks">
+            <li><a href="#" data-filter="all">Home</a></li>
+            <li><a href="#" data-filter="oldest">Old</a></li>
+            <li><a href="#" data-filter="newest">New</a></li>
+            <li><a href="#" data-filter="largest">large</a></li>
+            <li><a href="#" data-filter="smallest">Small</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="res-grid">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#10070; Julio Araujo &#10070; Paraná, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

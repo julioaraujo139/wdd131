@@ -1,0 +1,169 @@
+:root {
+    --heading-font: "Raleway", sans-serif;
+    --body-font: "Roboto Condensed", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+header {
+    display: flex;
+    padding: 1rem;
+    background: #310970;
+    color: white;
+    justify-content: space-between;
+
+  }
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-items: center;
+  }
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    justify-items: center;
+  }
+
+nav a:hover {
+    color: #ffe600;
+  }
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+  }
+
+.res-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.res-grid section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+figure {
+    background-color:#fff;
+    justify-items: center;
+    }
+
+img { 
+    max-width: 200px; 
+    height: auto; 
+    margin: .5rem;
+    }
+
+h1 {
+    font-family: var(--heading-font);
+  }
+
+p, figcaption, nav {
+    font-family: var(--body-font);
+}
+
+#navLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: .5rem;
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+#hamburgerBtn {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #hamburgerBtn {
+        display: block;
+        color: #fff;
+        z-index: 3;
+    }
+
+    nav#hamburger {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #310970;
+        z-index: 1;
+        justify-items: center;
+    }
+
+    nav#hamburger.open {
+        display: block;      
+    }
+
+    #navLinks {
+        flex-direction: column;
+        align-items: center;
+        background-color: #310970;
+        padding: 1rem;
+    }
+
+    #navLinks li a {
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+    }  
+
+    main {
+      max-width: 500px;
+
+    }
+}
+
+footer {
+    background: #310970;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
